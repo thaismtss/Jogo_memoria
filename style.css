@@ -10,6 +10,8 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     height: 95vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)100%),url(img/background.jpg);
     background-size: cover;
@@ -18,16 +20,16 @@ body {
 h1 {
     color: white;
     font-family: 'friends';
-    text-align: center;
+    margin: 3% 27%;
     letter-spacing: 5px;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .memory-game {
     height: 500px;
     width: 750px;
     display: flex;
-    margin: auto 26%;
+    margin: auto;
     flex-wrap: wrap;
     perspective: 1000px;
     margin-top: -25px;
@@ -81,22 +83,21 @@ h1 {
     border: none;
 }
 
-@media (max-width:600px){
+@media (max-width:700px){
     body {
         max-width: 100vh;
     }
     h1 {
-        display: flex;
-    
-
-        margin: 0 18%;
+        text-align: center;
+        margin: 0 auto;
     }
     .memory-game {
+        display: flex;
+        justify-content: center;
         margin: auto;
         width: 440px;
         height: 440px;
     
     }
 
-    
 }
