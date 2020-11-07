@@ -82,10 +82,21 @@ h1 {
 }
 
 @media (max-width:600px){
+    body {
+        max-width: 100vh;
+    }
+    h1 {
+        display: flex;
+    
+
+        margin: 0 18%;
+    }
     .memory-game {
-        margin: auto 3%;
-        width: 500px;
-        height: 400px;
+        margin: auto;
+        width: 440px;
+        height: 440px;
     
     }
+
+    
 }
